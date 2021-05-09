@@ -1,0 +1,356 @@
+/*    UTSAVI   */
+
+.head {
+    background: linear-gradient(0.25turn, #1d1d1c, #4e4e4d, #acadad);
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+}
+
+/*   CONTACT US   */
+
+.icons i {
+    margin-top: .5rem;
+    cursor: pointer;
+}
+
+.icons i:hover {
+    transform: scale(1.2);
+}
+
+.form-control {
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+    background-color: #d1d1d1;
+}
+
+.btn-send button {
+    background-color: rgb(104, 252, 239);
+    color: black;
+    margin-bottom: 1rem;
+}
+
+.btn-send button:hover {
+    background-color: teal;
+    color: white;
+    transition: all 0.5s ease;
+}
+
+.hint {
+    display: flex;
+    justify-content: flex-end;
+    color: red;
+    font-weight: bold;
+}
+
+/*   END OF CONTACT US   */
+
+/*    CONTACT US   */
+
+.about-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.about-img {
+    display: flex;
+    justify-content: center;
+}
+
+.about-img img {
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    box-shadow: .75em .75em 1em black;
+}
+
+.space {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.about-img img:hover {
+    transform: scale(1.2);
+}
+
+.read-more {
+    margin-bottom: 2rem;
+}
+
+.read-more a {
+    color: rgb(104, 252, 239);
+}
+
+.read-more a:hover {
+    color: whitesmoke;
+    transition: all 0.5s ease;
+}
+
+/*    END OF CONTACT US   */
+
+/*   END OF UTSAVI  */
+
+/*    JAHAN   */
+
+* {
+    list-style: none;
+}
+
+body {
+    /* font-size: calc([minimum size] + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]) / ([maximum viewport width] - [minimum viewport width])));*/
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1600 - 320)));
+}
+
+header {
+    background: black;
+    width: 100%;
+}
+
+nav {
+    max-width: 1180px;
+    height: 80px;
+    margin: 0px auto;
+    display: -webkit-flex;
+    display: flex;
+    -ms-align-items: center;
+    align-items: center;
+}
+
+.logo {
+    color: #fff;
+    margin-right: auto;
+    font-size: 24px;
+    font-family: 'Rock Salt', cursive;
+}
+
+#menuUl {
+    display: -webkit-flex;
+    display: flex;
+    list-style: none;
+}
+
+#menuUl li a {
+    background: transparent;
+    font-size: 100%;
+    vertical-align: baseline;
+    text-decoration: none;
+    color: #fff;
+    margin: 0px 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#menuUl li a:hover {
+    color: rgb(104, 252, 239) !important;
+}
+
+.nav__icon, .nav__icon span {
+    display: none;
+}
+
+.nav__icon {
+    width: 36px;
+    height: 28px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav__icon span {
+    background: rgba(255, 255, 255, 1);
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+}
+
+.nav__icon span:nth-of-type(1) {
+    top: 0;
+}
+
+.nav__icon span:nth-of-type(2) {
+    top: 12px;
+}
+
+.nav__icon span:nth-of-type(3) {
+    bottom: 0;
+}
+
+.nav__icon.active span:nth-of-type(1) {
+    -webkit-transform: translateY(12px) rotate(-45deg);
+    transform: translateY(12px) rotate(-45deg);
+}
+
+.nav__icon.active span:nth-of-type(2) {
+    display: none;
+}
+
+.nav__icon.active span:nth-of-type(3) {
+    -webkit-transform: translateY(-12px) rotate(45deg);
+    transform: translateY(-12px) rotate(45deg);
+}
+
+.clearfix:after {
+    clear: both;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.currentPage {
+    color: rgb(104, 252, 239)
+}
+
+.currentPage a {
+    color: rgb(104, 252, 239);
+    font-weight: bold;
+}
+
+.currentPage a:hover {
+    color: rgb(104, 252, 239);
+}
+
+footer {
+    background-color: black;
+    border: 1px solid rgba(0, 0, 0, 0.041);
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+}
+
+footer nav>li {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+footer>div {
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+    color: white;
+}
+
+footer>div:hover {
+    color: rgb(104, 252, 239);
+}
+
+.fa-twitter, .fa-facebook, .fa-youtube {
+    margin-top: 2rem;
+    color: rgb(245, 238, 238);
+}
+
+.fa-twitter:hover, .fa-facebook:hover, .fa-youtube:hover {
+    color: rgb(104, 252, 239);
+}
+
+@media only screen and (max-width: 768px) {
+    #menuUl {
+        display: none;
+    }
+    header {
+        position: relative;
+        z-index: 999;
+    }
+    ul {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+        -webkit-justify-content: center;
+        justify-content: center;
+        background: rgb(80, 80, 80);
+        position: absolute;
+        top: 80px;
+        left: 0px;
+        width: 100%;
+        padding-left: 1px;
+        z-index: 980;
+    }
+    ul li {
+        padding: 10px;
+        text-align: left;
+    }
+    ul li a {
+        display: block;
+        background: transparent;
+        margin: 0px;
+        padding: 2px;
+    }
+    ul li a:hover {
+        color: rgb(140, 124, 233);
+        background: rgb(255, 255, 255);
+        text-decoration: none;
+    }
+    .nav__icon, .nav__icon span {
+        display: inline-block;
+        transition: all .4s;
+        box-sizing: border-box;
+        z-index: 999;
+    }
+    #header>nav img {
+        padding-left: 10px;
+    }
+    .logo {
+        padding-left: 10px;
+    }
+    .currentPage {
+        border-bottom: 0px solid red;
+        padding-bottom: 10px;
+    }
+    .currentPage a {
+        color: blue;
+        font-weight: bold;
+    }
+}
+
+/*    END OF JAHAN   */
+
+/*    JOEY   */
+
+.showcase {
+    background: linear-gradient(0.25turn, #1d1d1c, #4e4e4d, #acadad);
+    ;
+    padding: 100px 0px;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    font-family: "Roboto", sans-serif;
+}
+
+.showcase img {
+    width: 100%;
+}
+
+.showcase h1 {
+    color: white;
+    font-size: 20px;
+    margin: 10px 0px;
+    font-style: italic;
+}
+
+.showcase p {
+    color: white;
+}
+
+.newsletter {
+    color: white;
+    height: 100%;
+    background: linear-gradient(0.25turn, #1d1d1c, #4e4e4d, #acadad);
+    ;
+    padding: 100px 0px;
+    text-align: center;
+}
+
+.added {
+    width: 50%;
+    margin: 0 auto;
+}
+
+/*    END OF JOEY  */
